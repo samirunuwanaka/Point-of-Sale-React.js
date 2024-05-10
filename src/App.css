@@ -1,38 +1,101 @@
-.App {
-  text-align: center;
+header{
+  background-color: blanchedalmond;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: auto;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  height: 100vh;
+  background-color: cadetblue;
+}
+
+h1 {
+  text-align: center;
+  color: crimson;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-control {
+  width: 300px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ced4da;
+}
+
+.btn-primary {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  background-color: #007bff;
   color: white;
+  cursor: pointer;
+}
+.right-align-button {
+  display: flex;
+  float : right;
+  cursor: pointer;
+}
+footer {
+  text-align: center;
+  font-family: Times New Roman;
+  font-size: 10px;
+  padding: 3px;
+  background-color: blanchedalmond;
+  color: Black;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+a{
+  margin: 20px;
+  border-color: aqua;
+  padding : 3px;
+  color: black;
+  background-color: aqua;
+  text-decoration: none;
+  font-size: medium;
+  border-radius: 10%;
+}
+.card-container {
+  top: 300px;
+  position: relative;
+  display: flex;
+  justify-content: space-around;
 }
 
-.App-link {
-  color: #61dafb;
+.card {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 30%;
+  padding: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.card h2 {
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.card p {
+  color: #666;
+}
+h3{
+  text-align: center;
+  border-width: 100%;
+  border-color: blue;
+  color: brown;
+  border-radius: 25%;
 }
