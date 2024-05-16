@@ -14,9 +14,11 @@ function App() {
         <Routes>
           <Route path="/logIn" element={<LoginPage />} />
           <Route path='/' element={<Home />} />
-          <Route path='/products editor' element={<Products />} />
-          <Route path='/stocks' element={<Stocks/>}/>
-          <Route path='/purchase' element={<Purchase/>}/>
+          <Route element={<ProtectedRoute />}>
+            <Route path='/products editor' element={<Products />} />
+            <Route path='/stocks' element={<Stocks/>}/>
+            <Route path='/purchase' element={<Purchase/>}/>
+          </Route>
         </Routes>
       </BrowserRouter>
     </div>
